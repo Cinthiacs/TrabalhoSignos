@@ -1,5 +1,5 @@
 # TrabalhoSignos.
-https://github.com/Cinthiacs/TrabalhoSignos/blob/master/LICENSE
+[![NPM](https://github.com/Cinthiacs/TrabalhoSignos/blob/master/LICENCE) 
 
 # Sobre o projeto
 
