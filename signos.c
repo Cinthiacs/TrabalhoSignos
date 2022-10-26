@@ -32,14 +32,14 @@ int main()
 		char opcao = 0;
         char nome[80] = { 0 };
 
-		time_t mytime;
-		mytime = time(NULL);
+	time_t mytime;
+	mytime = time(NULL);
         time_t data_ano;
         time(&data_ano);
         struct tm* data = localtime(&data_ano);
 
         printf("\r\n ");
-		printf(ctime(&mytime)); 
+	printf(ctime(&mytime)); 
 
         int dia_atual = data->tm_mday;
         int mes_atual = data->tm_mon + 1;
@@ -54,8 +54,8 @@ int main()
         int mes_nasc = 0;
         int dia_nasc = 0;
 
-        printf( "\r\n * Ol· caro usu·rio!\r\n"\
-                " * Este programa informar· sua idade e caracterÌsticas do seu signo.\r\n"\
+        printf( "\r\n * Ol√° caro usu√°rio!\r\n"\
+                " * Este programa informar√° sua idade e caracter√≠sticas do seu signo.\r\n"\
                 " * Digite seu nome!: ");
         
         //pede o nome ******
@@ -84,12 +84,12 @@ int main()
                 break;
             }
             else {
-                printf(" * %s, Valor inv·lido, digite um valor entre 1 e 31: ", nome);
+                printf(" * %s, Valor inv√°lido, digite um valor entre 1 e 31: ", nome);
             }
         }
 
         //pede o mes do nascimento ******
-        printf("\r\n * Digite o mÍs do seu nascimento: ");
+        printf("\r\n * Digite o m√™s do seu nascimento: ");
         while (1) {
             letra = scanf("%d", &mes_nasc);
             limpa_Teclado();
@@ -98,7 +98,7 @@ int main()
                 break;
             }
             else {
-                printf(" * %s, Valor inv·lido, digite um valor entre 1 e 12: ", nome);
+                printf(" * %s, Valor inv√°lido, digite um valor entre 1 e 12: ", nome);
             }
         }
 
@@ -112,7 +112,7 @@ int main()
                 break;
             }
             else {
-                printf(" * %s, Valor inv·lido, digite um valor entre 1900 e %d: ", nome, ano_atual);
+                printf(" * %s, Valor inv√°lido, digite um valor entre 1900 e %d: ", nome, ano_atual);
             }
         }
 
@@ -125,7 +125,7 @@ int main()
         mes_nascimento(mes_nasc);
         printf("/%d\r\n", ano_nasc);
 
-        printf("\r\n * %s, segundo suas informaÁıes vocÍ tem %d anos\r\n\r\n", nome, ano_atual - ano_nasc);
+        printf("\r\n * %s, segundo suas informa√ß√µes voc√™ tem %d anos\r\n\r\n", nome, ano_atual - ano_nasc);
         printf( " * Viveu aproximadamente:\r\n"\
                 "   * %d dias\r\n"\
                 "   * %d meses\r\n"\
@@ -193,7 +193,7 @@ int main()
 			limpa_Teclado();			
 		
 			if (opcao != 'n' && opcao != 'N' && opcao != 's' && opcao != 'S') {
-				printf(" * %s, VocÍ digitou um valor incorreto, digite s ou n: ", nome);
+				printf(" * %s, Voc√™ digitou um valor incorreto, digite s ou n: ", nome);
 			}
 			else {
 				break;
@@ -234,7 +234,7 @@ void mes_nascimento(int mes) {
         printf("Fevereiro");
         break;
     case 3:
-        printf("MarÁo");
+        printf("Mar√ßo");
         break;
     case 4:
         printf("Abril");
@@ -269,227 +269,227 @@ void mes_nascimento(int mes) {
 }
 
 void desc_Capricornio(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de CapricÛrnio:\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Capric√≥rnio:\r\n"\
             
             "\r\n Personalidade:\r\n"\
-            " * Todo CapricÛrnio È trabalhador, constante, persistente, obstinado, ambicioso, astuto e dono de uma consider·vel forÁa de vontade!.\r\n"\
-            " * Em geral s„o pessoas muito reservadas e quase nunca permitem que alguÈm entre em seu mundo particular.\r\n"\
+            " * Todo Capric√≥rnio √© trabalhador, constante, persistente, obstinado, ambicioso, astuto e dono de uma consider√°vel for√ßa de vontade!.\r\n"\
+            " * Em geral s√£o pessoas muito reservadas e quase nunca permitem que algu√©m entre em seu mundo particular.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " * No amor, tende a combinar mais com outra pessoa tambÈm de CapricÛrnio ou Touro, Virgem e Escorpi„o\r\n"\
-            " * O match tambÈm pode ser interessante com C‚ncer, Le„o, Libra e Peixes...\r\n"\
-            " * No campo da amizade, a maior compatibilidade È com Touro, C‚ncer, Virgem, Escorpi„o e CapricÛrnio.\r\n"\
+            " * No amor, tende a combinar mais com outra pessoa tamb√©m de Capric√≥rnio ou Touro, Virgem e Escorpi√£o\r\n"\
+            " * O match tamb√©m pode ser interessante com C√¢ncer, Le√£o, Libra e Peixes...\r\n"\
+            " * No campo da amizade, a maior compatibilidade √© com Touro, C√¢ncer, Virgem, Escorpi√£o e Capric√≥rnio.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " * Excelente organizador e administrador, tem sucesso em atividades onde È requerido um alto nÌvel de responsabilidadee trabalho sÈrio.\r\n"\
-            " * Controle de qualidade, ·rea de teste de produtos, chefia de f·bricas e grandes empresas de construÁ„o, engenharia,\r\n"\
-            " * imÛveis, tambÈm s„o ·rea nas quais o capricorniano costuma se destacar.\r\n", nome);
+            " * Excelente organizador e administrador, tem sucesso em atividades onde √© requerido um alto n√≠vel de responsabilidadee trabalho s√©rio.\r\n"\
+            " * Controle de qualidade, √°rea de teste de produtos, chefia de f√°bricas e grandes empresas de constru√ß√£o, engenharia,\r\n"\
+            " * im√≥veis, tamb√©m s√£o √°rea nas quais o capricorniano costuma se destacar.\r\n", nome);
     return;
 
 }
 
 void desc_Aquario(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Aqu·rio:\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Aqu√°rio:\r\n"\
 
             "\r\n Personalidade:\r\n"\
-            " * Aquario significa ser imprevisÌvel, esquisito, gÍnio, amigo, ‡ frente de seu tempo, mÌstico e criativo.\r\n"\
-            " * O perfil de Aqu·rio È diferente de todos do zodÌaco. Eles s„o inquietos e mais analisam a vida, do que a sentem.\r\n"\
+            " * Aquario significa ser imprevis√≠vel, esquisito, g√™nio, amigo, √† frente de seu tempo, m√≠stico e criativo.\r\n"\
+            " * O perfil de Aqu√°rio √© diferente de todos do zod√≠aco. Eles s√£o inquietos e mais analisam a vida, do que a sentem.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " * Aquarianos n„o lidam nada bem com emoÁıes e podem atÈ se sentir embaraÁados perto delas.\r\n"\
-            " * No amor, tende a combinar mais com outra pessoa tambÈm de Aqu·rio ou ¡ries, GÍmeos, Le„o, Libra e Sagit·rio.\r\n"\
-            " * J· no campo da amizade, a maior compatibilidade È com GÍmeos, Libra, Sagit·rio e Aqu·rio.\r\n"\
+            " * Aquarianos n√£o lidam nada bem com emo√ß√µes e podem at√© se sentir embara√ßados perto delas.\r\n"\
+            " * No amor, tende a combinar mais com outra pessoa tamb√©m de Aqu√°rio ou √Åries, G√™meos, Le√£o, Libra e Sagit√°rio.\r\n"\
+            " * J√° no campo da amizade, a maior compatibilidade √© com G√™meos, Libra, Sagit√°rio e Aqu√°rio.\r\n"\
             
             "\r\n Profissional:\r\n"\
-            " * no Trabalho precisa de autonomia, pois seu signo trava quando recebe muitas ordens ou opera no autom·tico.\n\r"\
-            " * Como nem sempre d· para escolher o emprego ideal, exiba seus talentos para, assim, conquistar cargos em que possa\r\n"\
+            " * no Trabalho precisa de autonomia, pois seu signo trava quando recebe muitas ordens ou opera no autom√°tico.\n\r"\
+            " * Como nem sempre d√° para escolher o emprego ideal, exiba seus talentos para, assim, conquistar cargos em que possa\r\n"\
             " * exercitar sua liberdade criativa.\r\n\r\n", nome);
     return;
 }
 
 void desc_Peixes(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Peixes:\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Peixes:\r\n"\
 
             "\r\n Personalidade:\r\n"\
-            " *Podem ser considerados as pessoas com a maior conex„o espiritual do zodÌaco. Signo de ·gua que transborda emoÁıes,\r\n"\
-            " *Faz dele sensÌvel, sensitivo, emp·tico, ingÍnuo, intuitivo, sonhador e artÌstico...\r\n"\
-            " *Possuem uma mente irracional e intuitiva, ‡s vezes ilusÛria e enganadora\r\n"\
+            " *Podem ser considerados as pessoas com a maior conex√£o espiritual do zod√≠aco. Signo de √°gua que transborda emo√ß√µes,\r\n"\
+            " *Faz dele sens√≠vel, sensitivo, emp√°tico, ing√™nuo, intuitivo, sonhador e art√≠stico...\r\n"\
+            " *Possuem uma mente irracional e intuitiva, √†s vezes ilus√≥ria e enganadora\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *Os signos que mais combinam s„o Escorpi„o e C‚ncer, pois compreendem a necessidade de afeto e sensibilidade nas relaÁıes.\r\n"\
-            " *Touro e CapricÛrnio, que s„o complementares, rendem uma relaÁ„o positiva e equilibrada.\r\n"\
+            " *Os signos que mais combinam s√£o Escorpi√£o e C√¢ncer, pois compreendem a necessidade de afeto e sensibilidade nas rela√ß√µes.\r\n"\
+            " *Touro e Capric√≥rnio, que s√£o complementares, rendem uma rela√ß√£o positiva e equilibrada.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *VocÍ tende a ser uma pessoa sensÌvel, rom‚ntica, carinhosa, intuitiva, criativa e espiritual.\r\n"\
-            " *Sua carreira n„o pode ir contra seus ideais, pois sua maior riqueza s„o seus sonhos.\r\n", nome);
+            " *Voc√™ tende a ser uma pessoa sens√≠vel, rom√¢ntica, carinhosa, intuitiva, criativa e espiritual.\r\n"\
+            " *Sua carreira n√£o pode ir contra seus ideais, pois sua maior riqueza s√£o seus sonhos.\r\n", nome);
     return;
 }
 
 void desc_Aries(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de ¡ries:\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de √Åries:\r\n"\
             "\r\n Personalidade:\r\n"\
             " *Possuem uma personalidade muito marcante de assertividade e impetuosidade. Costumam ser muito corajosos,\r\n"\
-            " *impulsivos, audaciosos, din‚micos e obstinados! S„o pessoas super empolgadas e de muita iniciativa.\r\n"\
-            " *Portadores de um grande senso de lideranÁa.\r\n"\
+            " *impulsivos, audaciosos, din√¢micos e obstinados! S√£o pessoas super empolgadas e de muita iniciativa.\r\n"\
+            " *Portadores de um grande senso de lideran√ßa.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *Os signos que combinam mais com ¡ries costumam ser os demais signos de Fogo (Le„o e Sagit·rio),\r\n"\
-            " *pois compreendem a forma como os arianos enxergam a realidade.Ao mesmo tempo, signos de Ar(Aqu·rio, GÍmeos e Libra)\r\n"\
-            " *tambÈm s„o uma boa aposta, pois s„o mais desprendidos e n„o v„o sufocar os nativos do signo de ¡ries.\r\n"\
+            " *Os signos que combinam mais com √Åries costumam ser os demais signos de Fogo (Le√£o e Sagit√°rio),\r\n"\
+            " *pois compreendem a forma como os arianos enxergam a realidade.Ao mesmo tempo, signos de Ar(Aqu√°rio, G√™meos e Libra)\r\n"\
+            " *tamb√©m s√£o uma boa aposta, pois s√£o mais desprendidos e n√£o v√£o sufocar os nativos do signo de √Åries.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *Em geral, Arianos se d„o bem em ·reas de Exatas, como Matem·tica e nas diversas Engenharias.\r\n"\
-            " *Mas tambÈm s„o excelentes mÈdicos, enfermeiros e advogados. AlÈm disso, costumam ser profissionais\r\n"\
-            " *diferenciados em administraÁ„o e marketing.\r\n", nome);
+            " *Em geral, Arianos se d√£o bem em √°reas de Exatas, como Matem√°tica e nas diversas Engenharias.\r\n"\
+            " *Mas tamb√©m s√£o excelentes m√©dicos, enfermeiros e advogados. Al√©m disso, costumam ser profissionais\r\n"\
+            " *diferenciados em administra√ß√£o e marketing.\r\n", nome);
     return;
 }
 
 void desc_Touro(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Touro\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Touro\r\n"\
 
             "\r\n Personalidade:\r\n"\
-            " *Por ser um signo de terra, fixo e muito pÈ no ch„o, os taurinos s„o inflexÌveis e possuem uma certa avers„o ao risco.\r\n"\
-            " *As pessoas do signo de touro s„o, por natureza, extremamente confi·veis, pacientes e leais, o que os tornam um Ûtimo\r\n"\
-            " *membro para sua equipe de trabalho e para o cÌrculo de amizade\r\n"\
+            " *Por ser um signo de terra, fixo e muito p√© no ch√£o, os taurinos s√£o inflex√≠veis e possuem uma certa avers√£o ao risco.\r\n"\
+            " *As pessoas do signo de touro s√£o, por natureza, extremamente confi√°veis, pacientes e leais, o que os tornam um √≥timo\r\n"\
+            " *membro para sua equipe de trabalho e para o c√≠rculo de amizade\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *No amor, tende a combinar mais com outra pessoa tambÈm de Touro ou C‚ncer, Virgem, Escorpi„o e CapricÛrnio.\r\n"\
-            " *J· no campo da amizade, a maior compatibilidade È com Touro, C‚ncer, Virgem, Libra, Escorpi„o, CapricÛrnio e Peixes.\r\n"\
-            " *vocÍ se destaca pela capacidade de trabalho, senso pr·tico e comprometimento.\r\n"\
+            " *No amor, tende a combinar mais com outra pessoa tamb√©m de Touro ou C√¢ncer, Virgem, Escorpi√£o e Capric√≥rnio.\r\n"\
+            " *J√° no campo da amizade, a maior compatibilidade √© com Touro, C√¢ncer, Virgem, Libra, Escorpi√£o, Capric√≥rnio e Peixes.\r\n"\
+            " *voc√™ se destaca pela capacidade de trabalho, senso pr√°tico e comprometimento.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *Em geral, È pontual e consciente das suas obrigaÁıes : n„o transfere tarefas se isso n„o tiver sido combinado.\r\n"\
+            " *Em geral, √© pontual e consciente das suas obriga√ß√µes : n√£o transfere tarefas se isso n√£o tiver sido combinado.\r\n"\
             " *Gosta demais de estabilidade e pode ficar por anos no mesmo emprego.\r\n", nome);
     return;
 
 }
 
 void desc_Gemeos(char nome[80]) {
-    printf( "\r\n %s VocÍ È do Signo de GÍmeos\r\n"\
+    printf( "\r\n %s Voc√™ √© do Signo de G√™meos\r\n"\
 
             "\r\n Personalidade:\r\n"\
-            " *S„o os famosos tagarelas do zodÌaco.\r\n"\
-            " *Um signo mental, racional e super ·gil, s„o pessoas brilhantes, comunicativas e curiosas.\r\n"\
-            " *Flutuam facilmente pela sua dupla personalidade, que em um momento est· super alegre e conversador\r\n"\
+            " *S√£o os famosos tagarelas do zod√≠aco.\r\n"\
+            " *Um signo mental, racional e super √°gil, s√£o pessoas brilhantes, comunicativas e curiosas.\r\n"\
+            " *Flutuam facilmente pela sua dupla personalidade, que em um momento est√° super alegre e conversador\r\n"\
             " *e de repente fica amuado e introspectivo\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *As pessoas de GÍmeos formam uma boa combinaÁ„o rom‚ntica com Libra e Aqu·rio, garantindo harmonia no relacionamento.\r\n"\
-            " *Por serem complementares, Le„o e ¡ries tambÈm se d„o bem como geminianos. ... Com toler‚ncia, Sagit·rio, ¡ries e Le„o\r\n"\
+            " *As pessoas de G√™meos formam uma boa combina√ß√£o rom√¢ntica com Libra e Aqu√°rio, garantindo harmonia no relacionamento.\r\n"\
+            " *Por serem complementares, Le√£o e √Åries tamb√©m se d√£o bem como geminianos. ... Com toler√¢ncia, Sagit√°rio, √Åries e Le√£o\r\n"\
             " *podem ser bons companheiros\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *VocÍ encontra soluÁıes r·pidas para os problemas, sabe dialogar com todo mundo\r\n"\
-            " *Sempre apresenta ideias brilhantes para inovar serviÁos, produtos ou processos.\r\n"\
-            " *N„o costuma permanecer muitos anos no mesmo emprego, a menos que essa atividade estimule continuamente sua curiosidade\r\n", nome);
+            " *Voc√™ encontra solu√ß√µes r√°pidas para os problemas, sabe dialogar com todo mundo\r\n"\
+            " *Sempre apresenta ideias brilhantes para inovar servi√ßos, produtos ou processos.\r\n"\
+            " *N√£o costuma permanecer muitos anos no mesmo emprego, a menos que essa atividade estimule continuamente sua curiosidade\r\n", nome);
     return;
 }
 
 void desc_Cancer(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de C‚ncer\r\n"\
-            " *Este È tradicionalmente um signo de famÌlia. … conservador, seus humores s„o inst·veis como as marÈs,\r\n"\
-            " *sua sensibilidade e intuiÁ„o suas melhores qualidades. Nunca espere objetividade de uma pessoa de c‚ncer.\r\n"\
-            " *A caracterÌstica mais desconcertante de C‚ncer È sua capacidade de manipulaÁ„o e chantagem emocional.\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de C√¢ncer\r\n"\
+            " *Este √© tradicionalmente um signo de fam√≠lia. √â conservador, seus humores s√£o inst√°veis como as mar√©s,\r\n"\
+            " *sua sensibilidade e intui√ß√£o suas melhores qualidades. Nunca espere objetividade de uma pessoa de c√¢ncer.\r\n"\
+            " *A caracter√≠stica mais desconcertante de C√¢ncer √© sua capacidade de manipula√ß√£o e chantagem emocional.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *Peixes e Escorpi„o s„o os signos mais indicados para um canceriano quando o assunto s„o relaÁıes amorosas.\r\n"\
-            " *Signos de Terra, como Virgem e Touro tambÈm podem render uma boa relaÁ„o.\r\n"\
-            " *Signos como ¡ries e Sagit·rio tambÈm d„o uma boa combinaÁ„o, mas podem conflitar por conta das opiniıes e do ego.\r\n"\
+            " *Peixes e Escorpi√£o s√£o os signos mais indicados para um canceriano quando o assunto s√£o rela√ß√µes amorosas.\r\n"\
+            " *Signos de Terra, como Virgem e Touro tamb√©m podem render uma boa rela√ß√£o.\r\n"\
+            " *Signos como √Åries e Sagit√°rio tamb√©m d√£o uma boa combina√ß√£o, mas podem conflitar por conta das opini√µes e do ego.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *VocÍ tende a seguir uma carreira ambiciosa. VocÍ gosta de se sentir ˙til e se dedica bastante ‡s suas tarefas\r\n"\
-            " *Os cancerianos tambÈm s„o subjetivos e, para atingirem seus objetivos profissionais ambiciosos, adotam uma postura sutil.\r\n", nome);
+            " *Voc√™ tende a seguir uma carreira ambiciosa. Voc√™ gosta de se sentir √∫til e se dedica bastante √†s suas tarefas\r\n"\
+            " *Os cancerianos tamb√©m s√£o subjetivos e, para atingirem seus objetivos profissionais ambiciosos, adotam uma postura sutil.\r\n", nome);
     return;
 }
 
 void desc_Leao(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Le„o\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Le√£o\r\n"\
             "\r\n Personalidade:\r\n"\
             " *Otimista, alegre, intuitiva e precisa sentir-se acima do bem e do mal.\r\n"\
-            " vQuando sente que È um ser mortal como todos os outros, sua vida pode tornar-se um verdadeiro inferno.\r\n"\
-            " *Le„o È carism·tico, charmoso e possui uma personalidade forte e decisiva.\r\n"\
+            " vQuando sente que √© um ser mortal como todos os outros, sua vida pode tornar-se um verdadeiro inferno.\r\n"\
+            " *Le√£o √© carism√°tico, charmoso e possui uma personalidade forte e decisiva.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *No amor, tende a combinar mais com outra pessoa tambÈm de Le„o ou ¡ries, Libra, Sagit·rio e Aqu·rio.\r\n"\
-            " *O match tambÈm pode ser interessante com Touro, GÍmeos, Escorpi„o e CapricÛrnio. Com Peixes, È mais ou menos\r\n"\
+            " *No amor, tende a combinar mais com outra pessoa tamb√©m de Le√£o ou √Åries, Libra, Sagit√°rio e Aqu√°rio.\r\n"\
+            " *O match tamb√©m pode ser interessante com Touro, G√™meos, Escorpi√£o e Capric√≥rnio. Com Peixes, √© mais ou menos\r\n"\
 
             " Profissional:\r\n"\
-            " *No ambiente de trabalho, as pessoas desse signo s„o aquelas que n„o passam despercebidas entre os colegas,\r\n"\
-            " *tanto pelo seu entusiasmo quanto pela forma como defende seus ideais, com determinaÁ„o.\r\n"\
-            " *Por ter essa postura mais autocentrada, os leoninos preferem trabalhar sozinhos e possuem tendÍncia a exercer lideranÁa.", nome);
+            " *No ambiente de trabalho, as pessoas desse signo s√£o aquelas que n√£o passam despercebidas entre os colegas,\r\n"\
+            " *tanto pelo seu entusiasmo quanto pela forma como defende seus ideais, com determina√ß√£o.\r\n"\
+            " *Por ter essa postura mais autocentrada, os leoninos preferem trabalhar sozinhos e possuem tend√™ncia a exercer lideran√ßa.", nome);
     return;
 }
 
 void desc_Virgem(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Virgem\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Virgem\r\n"\
             "\r\n Personalidade:\r\n"\
-            " *Possuem uma forte caracterÌstica intelectual. Tendem ao conhecimento especializado, com muita clareza mental.\r\n"\
-            " *Com seu r·pido raciocÌnio, virgem age com cautela, analisa, organiza e categoriza cada ·rea da vida.Sempre optam\r\n"\
+            " *Possuem uma forte caracter√≠stica intelectual. Tendem ao conhecimento especializado, com muita clareza mental.\r\n"\
+            " *Com seu r√°pido racioc√≠nio, virgem age com cautela, analisa, organiza e categoriza cada √°rea da vida.Sempre optam\r\n"\
             " *pela praticidade e objetividade ao resolver problemas.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *Signos mais compatÌveis: Virgem, CapricÛrnio, C‚ncer, Escorpi„o e Peixes\r\n"\
-            " *S„o trabalhadores, por isso se dedicam ‡s suas tarefas, sempre visando a perfeiÁ„o (de vez em quando atÈ demais).\r\n"\
+            " *Signos mais compat√≠veis: Virgem, Capric√≥rnio, C√¢ncer, Escorpi√£o e Peixes\r\n"\
+            " *S√£o trabalhadores, por isso se dedicam √†s suas tarefas, sempre visando a perfei√ß√£o (de vez em quando at√© demais).\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *Por ser muito metÛdico, quer realizar esses deveres do seu jeito, da forma que entende ser a melhor para deixar\r\n"\
-            " *tudo nos mÌnimos detalhes.\r\n", nome);
+            " *Por ser muito met√≥dico, quer realizar esses deveres do seu jeito, da forma que entende ser a melhor para deixar\r\n"\
+            " *tudo nos m√≠nimos detalhes.\r\n", nome);
     return;
 
 }
 
 void desc_Libra(char nome[80]) {
-    printf( "\r\n %s, VocÍ È do Signo de Libra\r\n"\
+    printf( "\r\n %s, Voc√™ √© do Signo de Libra\r\n"\
             "\r\n Personalidade:\r\n"\
-            " *S„o personalidades extremamente generosas e fazem de tudo para ajudar seus amigos.\r\n"
-            " *S„o personalidades muito soci·veis, extrovertidas e charmosas, est„o sempre preocupados em agradar o prÛximo.\r\n"\
-            " *S„o avessos a discussıes e brigas e muitas vezes optam pela harmonia do que pela verdade.\r\n"\
+            " *S√£o personalidades extremamente generosas e fazem de tudo para ajudar seus amigos.\r\n"
+            " *S√£o personalidades muito soci√°veis, extrovertidas e charmosas, est√£o sempre preocupados em agradar o pr√≥ximo.\r\n"\
+            " *S√£o avessos a discuss√µes e brigas e muitas vezes optam pela harmonia do que pela verdade.\r\n"\
 
             "\r\n Relacionamentos:\r\n"\
-            " *Libra combina mais com: ¡ries, GÍmeos, Le„o, Sagit·rio e Aqu·rio ñ signos que trazem bastante paix„o ao relacionamento.\r\n"\
-            " *Quanto ‡ Aqu·rio, o equilÌbrio entre o lado independente do signo pode ser um bom aspecto\r\n"\
-            " *para que o libriano n„o busque se dedicar somente ao outro.\r\n"\
+            " *Libra combina mais com: √Åries, G√™meos, Le√£o, Sagit√°rio e Aqu√°rio ¬ñ signos que trazem bastante paix√£o ao relacionamento.\r\n"\
+            " *Quanto √† Aqu√°rio, o equil√≠brio entre o lado independente do signo pode ser um bom aspecto\r\n"\
+            " *para que o libriano n√£o busque se dedicar somente ao outro.\r\n"\
 
             "\r\n Profissional:\r\n"\
-            " *Libra tende a ser uma pessoa muito amig·vel no escritÛrio e vai estar pronta para ajudar qualquer colega nos trabalhos em equipe\r\n"\
-            " *Precisar tomar decisıes importantes pode incomodar bastante em alguns momentos.\r\n", nome);
+            " *Libra tende a ser uma pessoa muito amig√°vel no escrit√≥rio e vai estar pronta para ajudar qualquer colega nos trabalhos em equipe\r\n"\
+            " *Precisar tomar decis√µes importantes pode incomodar bastante em alguns momentos.\r\n", nome);
     return;
 }
 
 void desc_Escorpiao(char nome[80]) {
-    printf("\r\n %s, VocÍ È do Signo de Escorpi„o\r\n"\
+    printf("\r\n %s, Voc√™ √© do Signo de Escorpi√£o\r\n"\
         "\r\n Personalidade:\r\n"\
-        " *… o signo da profundidade. S„o pessoas muito sentimentais, sensÌveis, vingativas, emocionais,\r\n"\
-        " *desconfiadas e buscam uma uni„o profunda com pessoas que possam responder a tamanha profundidade.\r\n"\
+        " *√â o signo da profundidade. S√£o pessoas muito sentimentais, sens√≠veis, vingativas, emocionais,\r\n"\
+        " *desconfiadas e buscam uma uni√£o profunda com pessoas que possam responder a tamanha profundidade.\r\n"\
 
         "\r\n Relacionamentos:\r\n"\
-        " *No amor, tende a combinar mais com outra pessoa tambÈm de Escorpi„o ou Touro, C‚ncer, Virgem, CapricÛrnio e Peixes.\r\n"\
-        "*O match tambÈm pode ser interessante com Le„o.Falta magnetismo com ¡ries, GÍmeos, Libra, Sagit·rio e Aqu·rio\r\n"\
+        " *No amor, tende a combinar mais com outra pessoa tamb√©m de Escorpi√£o ou Touro, C√¢ncer, Virgem, Capric√≥rnio e Peixes.\r\n"\
+        "*O match tamb√©m pode ser interessante com Le√£o.Falta magnetismo com √Åries, G√™meos, Libra, Sagit√°rio e Aqu√°rio\r\n"\
 
         "\r\n Profissional:\r\n"\
-        " *… uma pessoa honesta, em que se pode confiar para a realizaÁ„o de trabalhos e pode ajudar os demais funcion·rios.\r\n"\
-        " *Quando ele confia em algum colega, a relaÁ„o tende a ser muito construtiva para os dois e sempre vai refletir\r\n"\
+        " *√â uma pessoa honesta, em que se pode confiar para a realiza√ß√£o de trabalhos e pode ajudar os demais funcion√°rios.\r\n"\
+        " *Quando ele confia em algum colega, a rela√ß√£o tende a ser muito construtiva para os dois e sempre vai refletir\r\n"\
         " *nos resultados entregues\r\n", nome);
     return;
 }
 
 void desc_Sargitario(char nome[80]) {
-    printf("\r\n %s, VocÍ È do signo de Sagit·rio\r\n "\
+    printf("\r\n %s, Voc√™ √© do signo de Sagit√°rio\r\n "\
         "\r\n Personalidade:\r\n"\
-        " *Sagit·rio È um signo duplo, meio homem, meio cavalo. Sabe ser um bom conselheiro, como um sacerdote,\r\n"\
-        " *mas sabe tambÈm, dar seus coices. Sim, porque Sagit·rio È um signo agressivo, briguento, intolerante. \r\n"\
+        " *Sagit√°rio √© um signo duplo, meio homem, meio cavalo. Sabe ser um bom conselheiro, como um sacerdote,\r\n"\
+        " *mas sabe tamb√©m, dar seus coices. Sim, porque Sagit√°rio √© um signo agressivo, briguento, intolerante. \r\n"\
 
         "\r\n Relacionamentos:\r\n"\
-        " *Sagit·rio traz como principal marca, o sentido de liberdade, portanto, nem tente aprision·-lo ou control·-lo.\r\n"\
-        " *Sagitarianos s„o complementados por pessoas de Aqu·rio e Libra.\r\n"\
-        " *Ainda podem formar com Le„o e ¡ries uma relaÁ„o intensa.\r\n"\
-        " *CapricÛrnio: Peixes e Escorpi„o podem formar uma relaÁ„o equilibrada e feliz com a capricorniana.\r\n"\
-        " *Touro e Virgem tambÈm combinam, mas com cuidados para n„o sofrer com ci˙mes exagerados.\r\n"\
-        " *Sagitarianos s„o pessoas bem-humoradas, de bem com a vida, comunicativas e alegres.\r\n"\
+        " *Sagit√°rio traz como principal marca, o sentido de liberdade, portanto, nem tente aprision√°-lo ou control√°-lo.\r\n"\
+        " *Sagitarianos s√£o complementados por pessoas de Aqu√°rio e Libra.\r\n"\
+        " *Ainda podem formar com Le√£o e √Åries uma rela√ß√£o intensa.\r\n"\
+        " *Capric√≥rnio: Peixes e Escorpi√£o podem formar uma rela√ß√£o equilibrada e feliz com a capricorniana.\r\n"\
+        " *Touro e Virgem tamb√©m combinam, mas com cuidados para n√£o sofrer com ci√∫mes exagerados.\r\n"\
+        " *Sagitarianos s√£o pessoas bem-humoradas, de bem com a vida, comunicativas e alegres.\r\n"\
 
         "\r\n Profissional:\r\n"\
-        " *Devem procurar profissıes que acentuem tais qualidades.\r\n"\
-        " *Profissıes que os permitam desenvolver caracterÌsticas e pontos positivos para, assim,\r\n"\
-        " *evoluÌrem e crescerem profissionalmente\r\n", nome);
+        " *Devem procurar profiss√µes que acentuem tais qualidades.\r\n"\
+        " *Profiss√µes que os permitam desenvolver caracter√≠sticas e pontos positivos para, assim,\r\n"\
+        " *evolu√≠rem e crescerem profissionalmente\r\n", nome);
     return;
 }
