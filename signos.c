@@ -29,7 +29,7 @@ int main()
         system("cls");
         system("color 74");
 
-		char opcao = 0;
+	char opcao = 0;
         char nome[80] = { 0 };
 
 	time_t mytime;
