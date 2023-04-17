@@ -14,6 +14,13 @@ Um trabalho feito em linguagem C que calcula a idade e informa as característic
 
 ## Como executar
 1. Clone o repositório para sua máquina.
+```bash
+# clonar repositório
+git clone https://github.com/Cinthiacs/TrabalhoSignos.git
+# Abrir signos.c 
+#Copiar o código e executar em um compilador c++.
+
+```
 2. Abra o arquivo projeto.c em uma IDE que possua o compilador para a linguagem C instalado, como o DEV-C++.
 3. Compile o arquivo projeto.c na sua IDE.
 4. Execute o arquivo gerado pela compilação.
@@ -26,13 +33,7 @@ Um trabalho feito em linguagem C que calcula a idade e informa as característic
 5. Digite o ano do nascimento do usuário.
 6. As informações serão exibidas na tela.
 
-```bash
-# clonar repositório
-git clone https://github.com/Cinthiacs/TrabalhoSignos.git
-# Abrir signos.c 
-#Copiar o código e executar em um compilador c++.
 
-```
 ### Autora
 
 Cinthia Cavalheiro.
